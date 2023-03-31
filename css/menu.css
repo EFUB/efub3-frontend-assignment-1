@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+  font-family: "Inter", sans-serif;
+}
+
+/* header */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 110px;
+}
+
+.logo_green {
+  text-decoration: none;
+  color: #6ce18d;
+  font-size: 30px;
+}
+
+.close_icon {
+  width: 30px;
+}
+
+/* menu list */
+
+.modal > a {
+  font-size: 55px;
+  color: #6ce18d;
+  font-weight: 600;
+  padding-left: 80px;
+  display: flex;
+  line-height: 100px;
+  text-decoration: none;
+}
+
+.modal > a:hover {
+  color: white;
+}
+
+.line_white {
+  display: block;
+  background-color: #707070;
+  opacity: 50%;
+  height: 1px;
+  margin: auto;
+  width: 90%;
+  margin-top: 100px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 70px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  color: #6ce18d;
+  border: 1px solid #6ce18d;
+  border-radius: 50px;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  height: 30px;
+  width: 135px;
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+.contact_container {
+  padding-right: 70px;
+}
+
+.contact_container > a {
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #6ce18d;
+  font-weight: 800;
+}
+
+.contact_container > a:hover {
+  color: white;
+}

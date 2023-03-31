@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Inter", sans-serif;
+}
+
+/* header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.logo_icon1 {
+  width: 20px;
+  padding-right: 5px;
+}
+
+.logo_copy {
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.menu_icon {
+  width: 40px;
+}
+
+.menu_icon:hover .modal {
+  display: block;
+}
+
+header > h1 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+
+/* article */
+.club_img {
+  width: 220px;
+  border-radius: 20%;
+  margin-right: 5px;
+}
