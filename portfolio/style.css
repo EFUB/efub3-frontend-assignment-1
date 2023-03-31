@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: rgba(0, 70, 42);
+    line-height: 160%;
+    background-image: url('./symbol-mark.png');
+    background-size: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+header h1 {
+    text-align: center;
+    font: 80px bolder;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: white;
+}
+main {
+    background-color: white;
+    margin: 2% 7% 2% 7%;
+    padding: 2% 5% 2% 5%;
+    border-radius: 20px;
+}
+.info img {
+    background-color: rgba(0, 70, 42, 0.6);
+    border-radius: 50%;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    
+}
+.info-box {
+    padding-left: 35px;
+}
+.info-title {
+    float: left;
+    margin-bottom: 0.5em;
+}
+
+.info-content {
+    float: right;
+    margin-bottom: 0.5em;
+}
+
+.float-box {
+    overflow: auto;
+}
+
+.tech ul {
+    padding-inline-start: 0;
+}
+.tech ul li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 10px;
+}
+
+.career p {
+    margin: 0.2em;
+}
+
+.hobby ul {
+    padding-inline-start: 20px;
+}
+.hobby ul li::marker {
+    content: '♥ ';
+    color: rgba(0, 70, 42, 0.6);
+}
+.hobby ul li {
+    margin: 0.2em;
+}
+
+.sns a {
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
