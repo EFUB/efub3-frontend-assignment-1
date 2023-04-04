@@ -1,0 +1,74 @@
+* {
+  font-family: "Gowun Dodum", sans-serif;
+}
+header {
+  text-align: center;
+  margin: 0px 0 20px 0;
+  padding: 50px 0 50px 0;
+  background-color: antiquewhite;
+}
+.profile {
+  display: grid;
+  margin: auto;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid lightgray;
+  height: 1020px;
+  grid-template-rows: 1fr;
+}
+.card-vedio1 {
+  margin: auto;
+  display: block;
+}
+footer {
+  color: darkgrey;
+}
+
+.school {
+  margin-top: 20px;
+  text-align: center;
+}
+.myId {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.first {
+  text-align: center;
+}
+footer {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.skill,
+h6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+button {
+  margin-left: 7px;
+  border-radius: 10%;
+}
+
+.skill-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /*가로 메인축 방향으로 정렬*/
+  align-items: center;
+  margin-top: 10px;
+}
+
+.hand {
+  margin: auto;
+  display: block;
+  transform: rotate(90deg);
+}
+
+.link {
+  text-align: center;
+}
