@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="=EUC-KR" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 네비게이션 -->
+    <header>
+      <nav>
+        <a href="#home">Portfolio</a>
+        <ul>
+          <li><a href="#home" class="menue-btn">Home</a></li>
+          <li><a href="#about" class="menue-btn">About</a></li>
+          <li><a href="#skills" class="menue-btn">Skills</a></li>
+          <li><a href="#education" class="menue-btn">Education</a></li>
+          <li><a href="#activities" class="menue-btn">Activities</a></li>
+          <li><a href="#awards" class="menue-btn">Awards</a></li>
+          <li><a href="#site" class="menue-btn">Site</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- home -->
+      <section class="home" id="home">
+        <div class="content">
+          <h1>Jeongmin Cho</h1>
+          <h2>FRONTEND DEVELOPER</h2>
+          <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet rhoncus enim. Quisque viverra erat quis ipsum mollis, quis
+            vulputate velit vehicula. Phasellus nec purus vel purus consectetur
+            ornare ac non lacus. Nam nec risus vulputate, condimentum ex
+            pharetra, mattis velit. Ut urna quam, tincidunt non erat porta,
+            ornare facilisis magna. In ac risus nisl. Aliquam erat volutpat.
+            Nunc neque sem, eleifend id iaculis ut, laoreet sed velit.
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about" id="about">
+        <h3 class="title">ABOUT</h3>
+        <div class="content">
+          <div class="left-column">
+            <img
+              src="https://avatars.githubusercontent.com/u/97157930?v=4"
+              alt="profile"
+            />
+          </div>
+          <div class="right-column">
+            <div><span>NAME</span> Jeongmin Cho / Jamie</div>
+            <div><span>BIRTH</span> 2000.08.29</div>
+            <div><span>PHONE</span> 010-8479-4009</div>
+            <div><span>EMAIL</span> jojm0829@gmail.com</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills -->
+      <section class="skills" id="skills">
+        <h3 class="title">SKILLS</h3>
+        <div class="content">
+          <div class="category">
+            <div class="category-title">Programming</div>
+            <div class="bars">
+              <label for="C">C</label>
+              <progress id="C" max="100" value="70">70%</progress>
+              <label for="Python">Python</label>
+              <progress id="Python" max="100" value="40">40%</progress>
+              <label for="Java">Java</label>
+              <progress id="Java" max="100" value="80">80%</progress>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category-title">Web</div>
+            <div class="bars">
+              <label for="Html">Html</label>
+              <progress id="Html" max="100" value="60">60%</progress>
+              <label for="CSS">CSS</label>
+              <progress id="CSS" max="100" value="40">40%</progress>
+              <label for="JS">JS</label>
+              <progress id="JS" max="100" value="50">50%</progress>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category-title">Framework</div>
+            <div class="bars">
+              <label for="React">React</label>
+              <progress id="React" max="100" value="60">60%</progress>
+              <label for="React Native">React Native</label>
+              <progress id="React Native" max="100" value="40">40%</progress>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- education -->
+      <section class="education" id="education">
+        <h3 class="title">EDUCATION</h3>
+        <div class="content">
+          <div class="list">
+            <div><span>2016-2018</span> Kyeongin High School</div>
+            <div><span>2022</span> University of Northern Colorado</div>
+            <div><span>2019 - 2023</span> Ewha Womans University CSE</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- activities -->
+      <section class="activities" id="activities">
+        <h3 class="title">ACTIVITIES</h3>
+        <div class="content">
+          <div class="list">
+            <div><span>2020 - 2022</span> EDOC - Programming Club</div>
+            <div><span>2023</span> EFUB - Web Development Club</div>
+            <div><span>2023</span> Capstone Design Project</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- awards -->
+      <section class="awards" id="awards">
+        <h3 class="title">AWARDS</h3>
+        <div class="content">
+          <div class="list">
+            <div><span>2021</span> 16th E-PPER (9th Place)</div>
+            <div><span>2022</span> 18th E-PPER (3rd Place)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- site -->
+      <section class="site" id="site">
+        <h3 class="title">SITE</h3>
+        <div class="content">
+          <div class="element">
+            <a href="https://www.instagram.com/jjm0829/">
+              <div class="site-text">Instagram</div>
+              <img
+                class="img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+              />
+            </a>
+          </div>
+          <div class="element">
+            <a href="https://github.com/Cho-Jeongmin">
+              <div class="site-text">Github</div>
+              <img
+                class="img"
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>Created By Jeongmin Cho | 2023 All rights reserved</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  /* font-family: serif; */
+}
+
+header {
+  position: fixed;
+  background-color: rosybrown;
+  left: 0;
+  right: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 0.5px grey solid;
+  height: 60px;
+  align-items: center;
+}
+nav > a {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+main {
+  background-color: mistyrose;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 400px;
+}
+section {
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50em;
+}
+
+.title {
+  margin: 70px 10px 0px;
+  padding-bottom: 20px;
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 0.2px grey solid;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.home h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.home .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .text {
+  margin-top: 30px;
+  width: 500px;
+}
+
+.about .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 30px;
+}
+
+.skills .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.skills .category-title {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.skills label {
+  margin-left: 20px;
+}
+
+.education .content,
+.activities .content,
+.awards .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education .list,
+.activities .list,
+.awards .list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.site .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.site .element {
+  margin: 10px;
+}
+
+footer {
+  margin: 0px 10px 0px;
+}
