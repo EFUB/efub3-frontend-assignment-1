@@ -1,0 +1,138 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+body{
+    font-family:'Poppins';
+    font-weight:300;
+    background-color:#ecf5fc;
+    color:#6c757d;
+    font-size:17px;
+}
+h3{
+    font-size:25px; 
+    margin:20px 0;
+}
+header{
+    height:130px;
+    width:100%;
+    background-image:url('img/header_pic.jpg');
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+header h2{
+    font-size:30px;
+}
+header span{
+    
+    margin-bottom:20px;
+}
+
+nav, footer{
+    background-color:#c7ebe9;
+    height:32px;
+    display:flex;
+    align-items:center;
+}
+nav{
+    justify-content:space-around;
+}
+a{
+    text-decoration-line: none;
+}
+
+section{
+    margin:0 25px;
+}
+
+.about-me img{
+    border-radius:20%;
+}
+.about-me_img{
+    display:flex;
+    justify-content:center;
+    
+}
+.about-me_des{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:25px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+
+.hobbies div{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.hobbies span{
+    margin-bottom:15px;
+}
+
+.status-bar_block{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.status-bar_not-colored{
+    background-color:#dee2e4;
+    height:8px;
+    border-radius:15px;
+    margin-right:15px;
+}
+.status-bar_colored{
+    background-color:#c7ebe9;
+    height:8px;
+    border-radius:15px;
+    
+}
+
+#c .status-bar_colored{
+    width:80%;
+}
+#c .status-bar_not-colored{
+    width:20%;
+}
+#html .status-bar_colored{
+    width:70%;
+}
+#html .status-bar_not-colored{
+    width:30%;
+}
+#js .status-bar_colored{
+    width:30%;
+}
+#js .status-bar_not-colored{
+    width:70%;
+}
+
+.projects h4{
+    font-size:20px;
+    margin:15px 0;
+}
+.projects div{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.projects img{
+    border-radius:15%;
+    margin-right:25px; 
+}
+
+footer{
+   justify-content:center;
+}
+footer i{
+    margin-right:15px;
+}
