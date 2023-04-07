@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.board > div {
+  padding: 80px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  margin: 30px 10px;
+  padding: 5px 15px;
+  font-size: x-large;
+}
+
+.score {
+  font-size: xx-large;
+}
+
+.reset-container {
+  display: flex;
+  justify-content: end;
+}
+
+.reset {
+  padding: 3px 10px;
+  font-size: large;
+}
