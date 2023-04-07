@@ -9,19 +9,19 @@ const computerScore = document.querySelector(".score .computer");
 const reset = document.querySelector(".reset");
 
 scissors.onclick = () => {
-  human.innerText = "°¡À§";
+  human.innerText = "ê°€ìœ„";
   chooseComputer();
   judge();
 };
 
 rock.onclick = () => {
-  human.innerText = "¹ÙÀ§";
+  human.innerText = "ë°”ìœ„";
   chooseComputer();
   judge();
 };
 
 paper.onclick = () => {
-  human.innerText = "º¸";
+  human.innerText = "ë³´";
   chooseComputer();
   judge();
 };
@@ -29,30 +29,30 @@ paper.onclick = () => {
 reset.onclick = () => {
   human.innerText = "";
   computer.innerText = "";
-  result.innerText = "¹öÆ° ÇÏ³ª¸¦ ´©¸£¼¼¿ä.";
+  result.innerText = "ë²„íŠ¼ í•˜ë‚˜ë¥¼ ëˆ„ë¥´ì„¸ìš”.";
   computerScore.innerText = 0;
   humanScore.innerText = 0;
 };
 
 const chooseComputer = () => {
   const num = Math.floor(Math.random() * 3);
-  if (num === 0) computer.innerText = "°¡À§";
-  else if (num === 1) computer.innerText = "¹ÙÀ§";
-  else if (num === 2) computer.innerText = "º¸";
+  if (num === 0) computer.innerText = "ê°€ìœ„";
+  else if (num === 1) computer.innerText = "ë°”ìœ„";
+  else if (num === 2) computer.innerText = "ë³´";
 };
 
 const judge = () => {
   if (human.innerText === computer.innerText) {
-    result.innerText = "ºñ°å½À´Ï´Ù.";
+    result.innerText = "ë¹„ê²¼ìŠµë‹ˆë‹¤.";
   } else if (
-    (human.innerText === "°¡À§" && computer.innerText === "¹ÙÀ§") ||
-    (human.innerText === "¹ÙÀ§" && computer.innerText === "º¸") ||
-    (human.innerText === "º¸" && computer.innerText === "°¡À§")
+    (human.innerText === "ê°€ìœ„" && computer.innerText === "ë°”ìœ„") ||
+    (human.innerText === "ë°”ìœ„" && computer.innerText === "ë³´") ||
+    (human.innerText === "ë³´" && computer.innerText === "ê°€ìœ„")
   ) {
-    result.innerText = "ÄÄÇ»ÅÍ°¡ ÀÌ°å½À´Ï´Ù.";
+    result.innerText = "ì»´í“¨í„°ê°€ ì´ê²¼ìŠµë‹ˆë‹¤.";
     computerScore.innerText = parseInt(computerScore.innerText) + 1;
   } else {
-    result.innerText = "ÀÎ°£ÀÌ ÀÌ°å½À´Ï´Ù.";
+    result.innerText = "ì¸ê°„ì´ ì´ê²¼ìŠµë‹ˆë‹¤.";
     humanScore.innerText = parseInt(humanScore.innerText) + 1;
   }
 };
