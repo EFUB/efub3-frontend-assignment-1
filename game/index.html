@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--영문 폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <div>
+      <h1>
+        ROCK SCISSORS PAPER
+        <img src="./src/arrow.svg" alt="arrow" class="arrow" />
+      </h1>
+      <h3>Developed by Doozuu</h3>
+      <hr />
+      <div class="game">
+        <div class="my_section">
+          <img src="./src/crown.svg" alt="crown" id="crown1" />
+          <img src="./src/left_rock.png" alt="human" id="my_img" />
+          <h2>You : <span id="my_score">0</span></h2>
+        </div>
+        <span class="vs">VS</span>
+        <div class="computer_section">
+          <img src="./src/crown.svg" alt="crown" id="crown2" />
+          <img src="./src/right_rock.png" alt="computer" id="computer_img" />
+          <h2>Computer : <span id="computer_score">0</span></h2>
+        </div>
+      </div>
+      <hr />
+      <div class="choice">
+        <button id="0" onclick="handleClick(this)">Rock</button>
+        <button id="1" onclick="handleClick(this)">Scissors</button>
+        <button id="2" onclick="handleClick(this)">Paper</button>
+      </div>
+      <div class="reset">
+        <button class="reset_btn" onclick="window.location.reload()">
+          <img src="./src/reset.svg" alt="reset" class="reset_img" />
+        </button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
