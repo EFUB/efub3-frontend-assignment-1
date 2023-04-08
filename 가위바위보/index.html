@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보</title>
+    <link rel="stylesheet" href="./가위바위보.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="scoreBoard"></div>
+        <div id="info">
+            <span>유저</span>
+            <span>AI</span>
+        </div>
+        <div id="score">
+            <span id="userScore">0</span>
+            <span> : </span>
+            <span id="AiScore">0</span>
+        </div>
+        <div id="result"></div>
+    </div>
+    <!--결과가 나오는 버튼-->
+    <!--가위바위보 이미지-->
+    <div id="imgContainer">
+        <div id="choiceImgContainer">
+            <div id="userChoiceImg">
+                <img class="userimg none" value="scissors" src="./img/가위 유저.png">
+                <img class="userimg none" value="rock" src="./img/바위 유저.png">
+                <img class="userimg none" value="paper" src="./img/보 유저.png">
+            </div>
+            <div id="aiChoiceImg">
+                <img class="aiImg none" src="./img/가위 ai.png">
+                <img class="aiImg none" src="./img/보 ai.png">
+                <img class="aiImg none" src="./img/바위 ai.png">
+            </div>
+        </div>
+        <!--유저 가위바위보 선택창-->
+         <div class="choiceContainer">
+            <button id="btnScissors" value="scissors">가위</button>
+            <button id="btnRock" value="rock">바위</button>
+            <button id="btnPaper" value="paper">보</button>
+        </div>
+        <!--승부 버튼-->
+        <button id="submitBtn">승부!</button>
+    </div>
+    <!--실제로는 안보임-->
+    <img id="resetBtn" src="./img/reset.png">
+    <script src="./가위바위보.js"></script>
+</body>
+</html>
