@@ -1,0 +1,64 @@
+.score {
+    display: flex;
+    justify-content: center;
+}
+
+.score h1 {
+    width: 100px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.result, .name {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.name img {
+    text-align: center;
+    padding: 30px 80px 30px 80px;
+}
+
+.com-result, .user-result {
+    width: 200px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.winner {
+    width: 100%;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+.pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pic img:hover {
+    transform: scale(1.2);
+}
+
+.pic img {
+    padding: 3em;
+}
+
+.reset {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+}
+
+.reset img:hover {
+    transform: scale(1.2);
+}
+
+@media(max-width:1200px) {
+    .pic img {
+        width: 200px;
+    }
+}
