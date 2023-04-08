@@ -1,6 +1,7 @@
 const rock=document.querySelector('.rock');
 const scissors=document.querySelector('.scissors');
 const paper=document.querySelector('.paper');
+const resultText=document.querySelector('.result-text');
 const myScore=document.querySelector('.my-score');
 const comScore=document.querySelector('.computer-score');
 const comImg=document.querySelector('.computer-img');
@@ -21,16 +22,16 @@ function win(myChoice, comChoice){
     my_score++;
     myScore.innerText=my_score;
     comScore.innerText=com_score;
-    alert("이겼습니다!");
+    resultText.innerText='이겼습니다^^!';
 }
 function lose(myChoice, comChoice){
     com_score++;
     myScore.innerText=my_score;
     comScore.innerText=com_score;
-    alert("졌습니다!");
+    resultText.innerText='졌습니다ㅠㅠ!';
 }
 function draw(myChoice, comChoice){
-    alert("비겼습니다!");
+    resultText.innerText='비겼습니다!';
 }
 
 function play(myChoice){
@@ -56,11 +57,6 @@ function play(myChoice){
     }
 }
 
-function refreshFunction(){
-    myScore.innerText=0;
-    comScore.innerText=0;
-}
-
 function main(){
     rock.addEventListener('click',() =>play('rock'));
         
@@ -68,7 +64,11 @@ function main(){
         
     paper.addEventListener('click',() =>play('paper'));
     
-    refresh.addEventListener('click', refreshFunction);
+    refresh.addEventListener('click', function(){
+        myScore.innerText=0;
+        comScore.innerText=0;
+        my_score=com_score=0;
+    });
 }
 
 main();
