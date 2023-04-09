@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="image/logo.png" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 점수 출력 -->
+      <div class="score-box">
+        <p class="score" id="status-result__player">0</p>
+        <p class="score vs">:</p>
+        <p class="score" id="status-result__computer">0</p>
+      </div>
+
+      <!-- 결과 -->
+      <div class="result-box">
+        <!-- 유저가 선택한 부분 -->
+        <div class="human-box">
+          <p>Human</p>
+          <div id="player-selected-img"></div>
+        </div>
+
+        <!-- 컴퓨터가 선택한 부분 -->
+        <div class="computer-box">
+          <p>Computer</p>
+          <div id="computer-selected-img"></div>
+        </div>
+      </div>
+
+      <!-- 유저가 선택하는 부분 -->
+      <div id="select-box" class="select-box">
+        <img id="rock" class="rock" src="./image/rocktext.svg" />
+        <img id="scissors" class="scissors" src="./image/scissorstext.svg" />
+        <img id="paper" class="paper" src="./image/papertext.svg" />
+      </div>
+    </div>
+
+    <!-- 타이틀 -->
+    <div class="efub-box">
+      <p class="efub">EFUB</p>
+      <p class="copyright first">Copyright ⓒ dy6578ekdbs.</p>
+      <p class="copyright">All Rights Reserved.</p>
+    </div>
+
+    <!-- sns 로고 -->
+    <div class="sns-box">
+      <a href="https://www.instagram.com/ewha_efub/">
+        <img src="./image/insta.png" class="sns" />
+      </a>
+
+      <a href="https://github.com/EFUB">
+        <img src="./image/github.png" class="sns"
+      /></a>
+      <a href="https://efub.co.kr/">
+        <img src="./image/web.png" class="sns"
+      /></a>
+    </div>
+
+    <!-- 리셋 -->
+    <img src="./image/reset.png" id="reset" class="sns" />
+
+    <script src="./index.js"></script>
+  </body>
+</html>
