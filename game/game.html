@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보</title>
+
+  </head>
+
+  <body>
+    <h1>
+      가위바위보 게임</h1>
+    <!-- 승/패 결과 -->
+    <h2>나 : 컴퓨터</h2>
+    <!-- 점수 -->
+    <h3>
+      <span id='me'>0</span>
+      :
+      <span id='computer'>0</span>
+    </h3>
+    <br>
+    <!-- 컴퓨터가 낼 것-->
+    <span>컴퓨터:</span>
+    <span id="computerChoice">
+      Ready
+    </span>
+    <br>
+    <!-- 사용자가 낼 것 -->
+    <button onclick="scissors()" type="button">✌</button>
+    <button onclick="rock()" id="rock" type="button">
+      ✊</button>
+    <button onclick="paper()" id="paper" type="button">
+      🖐
+    </button>
+    <br>
+    <!-- 리셋버튼 -->
+    <button onclick="resetBtn()" class="reset" type="button">
+      RESET🔄
+    </button>
+  </body>
+</html>
