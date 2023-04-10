@@ -1,0 +1,116 @@
+body {
+  padding: 0px 30px 30px;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.arrow {
+  width: 60px;
+}
+
+hr {
+  opacity: 40%;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  align-items: center;
+}
+
+span {
+  font-size: 2rem;
+}
+
+.vs {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+.my_section .computer_section {
+  display: flex;
+  flex-direction: column;
+}
+
+#my_img #computer_img {
+  align-items: center;
+  width: 30rem;
+  height: 30rem;
+}
+
+#crown1 {
+  position: absolute;
+  margin-top: 15px;
+  display: none;
+}
+
+#crown2 {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 16rem;
+  display: none;
+}
+
+.choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+button {
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: black;
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.reset {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reset_btn {
+  background-color: white;
+  border: none;
+}
+
+.reset_btn:hover {
+  background-color: white;
+  border: none;
+}
+
+.reset_img {
+  width: 2.5rem;
+}
