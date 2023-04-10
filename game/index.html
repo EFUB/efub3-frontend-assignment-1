@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="EUR-KR" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>가위바위보 게임</h1>
+
+    <div class="board">
+      <div class="human">
+        <h2>인간</h2>
+        <h1 class="choice"></h1>
+      </div>
+      <div class="computer">
+        <h2>컴퓨터</h2>
+        <h1 class="choice"></h1>
+      </div>
+    </div>
+    <div class="score">
+      <span class="human">0</span>
+      :
+      <span class="computer">0</span>
+    </div>
+    <h1 class="result">버튼 하나를 누르세요.</h1>
+    <div class="buttons">
+      <button class="scissors">가위</button>
+      <button class="rock">바위</button>
+      <button class="paper">보</button>
+    </div>
+
+    <div class="reset-container">
+      <button class="reset">리셋</button>
+    </div>
+    <script defer src="main.js"></script>
+  </body>
+</html>
