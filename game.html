@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>가위바위보 게임</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Gowun Dodum", sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 170px;
+      }
+      .border {
+        width: 500px;
+        height: 400px;
+        border: 1px solid black;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+      }
+      body {
+        justify-content: center;
+        background-color: rgb(33, 90, 71);
+      }
+      h2 {
+        text-align: center;
+      }
+      h5 {
+        text-align: center;
+        margin: 0%;
+      }
+      .Score {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .result {
+        display: flex;
+        justify-content: center;
+      }
+      .result > p {
+        margin: 0 20px 0 20px;
+      }
+      .myScore {
+        margin-left: 15px;
+        margin-right: 10px;
+      }
+      .comScore {
+        margin-left: 15px;
+      }
+      .reset {
+        width: 100px;
+        margin: auto;
+        padding: 5px 10px 5px 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: block;
+      }
+      .btn {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .btn > button {
+        margin: 0 10px 0 10px;
+        padding: 5px 10px 5px 10px;
+        background-color: bisque;
+      }
+      .win {
+        width: 300px;
+        height: 40px;
+        margin: auto;
+        margin-top: 0;
+        /* border: 1px solid black; */
+        display: block;
+        text-align: center;
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="border">
+        <h2>가위 바위 보 게임</h2>
+
+        <h5>점수</h5>
+        <div class="Score">
+          <div class="myScore">
+            <p>Player</p>
+            <p id="myScore">0</p>
+          </div>
+          <div class="comScore">
+            <p>Computer</p>
+            <p id="comScore">0</p>
+          </div>
+        </div>
+
+        <div class="result">
+          <p id="player">가위</p>
+          <p id="computer">가위</p>
+        </div>
+        <div class="win">
+          <p id="winner">결과</p>
+        </div>
+
+        <div class="btn">
+          <button id="scis" type="button" onclick="BtnListener(this.id)">
+            가위
+          </button>
+          <button id="rock" onclick="BtnListener(this.id)">바위</button>
+          <button id="paper" onclick="BtnListener(this.id)">보</button>
+        </div>
+
+        <button class="reset" onclick="remove()">reset</button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let myval = 0;
+    let comval = 0;
+    let myScore = 0;
+    let comScore = 0;
+
+    function BtnListener(id) {
+      if (id === "scis") {
+        // console.log("가위");
+        myval = 0;
+        document.getElementById("player").innerText = "가위";
+      }
+      if (id === "rock") {
+        // console.log("바위");
+        myval = 1;
+        document.getElementById("player").innerText = "바위";
+      }
+      if (id === "paper") {
+        // console.log("보");
+        myval = 2;
+        document.getElementById("player").innerText = "보";
+      }
+
+      comval = Math.floor(Math.random() * 3);
+      if (comval === 0) {
+        document.getElementById("computer").innerText = "가위";
+      } else if (comval === 1) {
+        document.getElementById("computer").innerText = "바위";
+      } else if (comval === 2) {
+        document.getElementById("computer").innerText = "보";
+      }
+      console.log(`${myval} : ${comval}`);
+
+      if (myval - comval === 1 || myval - comval === -2) {
+        document.getElementById("myScore").innerText = ++myScore;
+
+        console.log(`이겼습니다. ${myScore} : ${comScore} `);
+        document.getElementById("winner").innerText = "player가 이겼습니다!";
+      } else if (myval - comval === -1 || myval - comval === 2) {
+        document.getElementById("comScore").innerText = ++comScore;
+        document.getElementById("winner").innerText = "Computer가 이겼습니다";
+        console.log(`졌습니다. ${myScore} : ${comScore} `);
+      } else if (myval - comval === 0) {
+        console.log(`비겼습니다. ${myScore} : ${comScore} `);
+        document.getElementById("winner").innerText = "비겼습니다";
+      }
+    }
+  //리셋함수
+    function remove() {
+      myval = 0;
+      comval = 0;
+      myScore = 0;
+      comScore = 0;
+      document.getElementById("myScore").innerText = 0;
+      document.getElementById("comScore").innerText = 0;
+      document.getElementById("computer").innerText = "가위";
+      document.getElementById("player").innerText = "가위";
+      document.getElementById("winner").innerText = "결과";
+    }
+  </script>
+</html>
