@@ -8,20 +8,12 @@ const humanScore = document.querySelector(".score .human");
 const computerScore = document.querySelector(".score .computer");
 const reset = document.querySelector(".reset");
 
-scissors.onclick = () => {
-  human.innerText = "가위";
-  chooseComputer();
-  judge();
-};
+scissors.addEventListener("click", () => play("가위"));
+rock.addEventListener("click", () => play("바위"));
+paper.addEventListener("click", () => play("보"));
 
-rock.onclick = () => {
-  human.innerText = "바위";
-  chooseComputer();
-  judge();
-};
-
-paper.onclick = () => {
-  human.innerText = "보";
+const play = (myChoice) => {
+  human.innerText = myChoice;
   chooseComputer();
   judge();
 };

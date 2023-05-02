@@ -53,8 +53,8 @@ main {
   background-color: mistyrose;
   display: flex;
   flex-direction: column;
-  margin-bottom: 400px;
 }
+
 section {
   padding-top: 50px;
   justify-content: center;
@@ -73,16 +73,6 @@ section {
 
 .content {
   margin-top: 50px;
-}
-
-img {
-  width: 150px;
-  height: 150px;
-}
-
-span {
-  font-weight: bold;
-  margin-right: 10px;
 }
 
 .home h1 {
@@ -107,11 +97,27 @@ span {
   align-items: center;
 }
 
-.about .right-column {
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.about img {
+  margin-right: 30px;
+}
+
+.list {
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin-left: 30px;
+}
+
+.left-container,
+.right-container {
+  text-align: left;
+}
+
+.left-container {
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .skills .category {
@@ -137,14 +143,6 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.education .list,
-.activities .list,
-.awards .list {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
 }
 
 .site .content {
