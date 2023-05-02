@@ -53,8 +53,8 @@ main {
   background-color: mistyrose;
   display: flex;
   flex-direction: column;
-  margin-bottom: 400px;
 }
+
 section {
   padding-top: 50px;
   justify-content: center;
